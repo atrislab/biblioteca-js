@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --white: #f4f4f9;
+  --gray: #bfc2c4;
+  --blue: #007ab8;
+  --darker-blue: #004466;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 30px;
+  background-color: var(--gray);
+}
+
+.book {
+  min-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 0px;
+  background-color: var(--blue);
+}
+
+.book-image {
+  max-width: 64%;
+  border-radius: 10px;
+}
+
+.book-info {
+  min-width: 60%;
+  background-color: var(--white);
+  color: var(--darker-blue);
+  border-radius: 10px;
+  padding: 10px 0px 10px 15px;
+}
+
+.book-link {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.book-author,
+.book-country {
+  display: block;
+}
